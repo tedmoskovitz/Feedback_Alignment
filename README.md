@@ -1,2 +1,4 @@
 # Feedback_Alignment
-Investigating biologically-plausible implementations of the backpropagation algorithm.
+Investigating biologically-plausible implementations of the backpropagation algorithm (IN PROGRESS). 
+
+Backpropagation has proven an incredibly effective algorithm for training deep neural networks. However, its implementation as a learning mechanism in the brain has been largely ruled out due to its use of forward weight connections during the backwards pass (weight update phase). However, several papers (included in this repository) have shown the surprising result that it is possible to implement backprop using only random, fixed matrices instead of transposed weight matrices in the backward pass. This technique has been broadly termed "feedback alignment' (FA). It points to the possibility that backprop can indeed avoid the so-called "weight transport problem." Previous work has primarily focused on fully-connected networks. Here, we investigate the application of FA (specifically, the technique known as direct feedback alignment, or DFA) to convolutional networks. 
